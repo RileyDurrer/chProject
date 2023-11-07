@@ -1,0 +1,10 @@
+Homework 7: Semester Project Proposal
+By the deadline, please submit as a Word doc your response to each bulleted item below:
+
+Your current answer to this question:  How do the Humanities and Data Analytics complement each other?  What does each discipline provide the other that they lack on their own?  (You're encouraged to refine the ideas your first formulated in Threaded Discussion 1 or that you negotiate in your group). 
+Your broad topic or area of concern that will give you an opportunity to illustrate your answer to the question above
+Your current (focused and manageable) Research Question that emerges from some current debate or concern related to your broad topic (you may need to draft several versions before you find your focus)
+Your initial Hypothesis (your current provisional answer to the Research Question that your project will test)
+The dataset(s) you'll be working with (found or scraped)
+The method(s) you'll use
+If working in a group, a description of the division of labor (who is responsible for what task?) 
