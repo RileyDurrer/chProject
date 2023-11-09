@@ -8,13 +8,13 @@ Your current answer to this question:  How do the Humanities and Data Analytics 
 
 
 Your broad topic or area of concern that will give you an opportunity to illustrate your answer to the question above
-
+Patterns in how chat gpt responsponds and how potential biases can emerge from it
 
 Your current (focused and manageable) Research Question that emerges from some current debate or concern related to your broad topic (you may need to draft several versions before you find your focus)
-
+Given a verity of prompts asking chat GPT to explain varius human ideas in the fromat of "tell me about ______" and do patterns emerge and does this show any apperent biases in the Large Language Modles responses
 
 Your initial Hypothesis (your current provisional answer to the Research Question that your project will test)
-
+I believe it will show logical 
 
 The dataset(s) you'll be working with (found or scraped)
 
