@@ -2,10 +2,8 @@ Homework 7: Semester Project Proposal
 By the deadline, please submit as a Word doc your response to each bulleted item below:
 
 Your current answer to this question:  How do the Humanities and Data Analytics complement each other?
-
-
  What does each discipline provide the other that they lack on their own?  (You're encouraged to refine the ideas your first formulated in Threaded Discussion 1 or that you negotiate in your group).
-
+Each on their own are usless, with Data you have numbers but no way to analyze them and humanities no concrete way to proove anything, the combination of the 2 is neccessary to do research. Especially with the rise of large data more and more patterns have been able to emirge leading to a better understanding of the human proccess.
 
 Your broad topic or area of concern that will give you an opportunity to illustrate your answer to the question above
 Patterns in how chat gpt responsponds and how potential biases can emerge from it
@@ -15,11 +13,15 @@ Given a verity of prompts asking chat GPT to explain varius human ideas in the f
 
 Your initial Hypothesis (your current provisional answer to the Research Question that your project will test)
 I believe it will show logical 
+I believe it will become apperent that there is a vocabulary chatGPT perfers probably from a more logical or machiavellian standpoint
 
 The dataset(s) you'll be working with (found or scraped)
-
+We will get chatGPT responses using openAPI withen our code
 
 The method(s) you'll use
-
+Term frequency as well as using ChatGPT in order to topic model itself, I believe it will do a better and more strait forward job then topic modeling because they use the same technology in essence but 1 has significantly more training data and is more cutting age wwith its NLP coming from 2022 rather than 2012.
 
 If working in a group, a description of the division of labor (who is responsible for what task?) 
+Riley- Data recording and API usage
+Adessa- pandas and data proccessing
+Andrew- recording and structuring data in a visual way
