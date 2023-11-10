@@ -22,6 +22,6 @@ The method(s) you'll use
 Term frequency as well as using ChatGPT in order to topic model itself, I believe it will do a better and more strait forward job then topic modeling because they use the same technology in essence but 1 has significantly more training data and is more cutting age wwith its NLP coming from 2022 rather than 2012.
 
 If working in a group, a description of the division of labor (who is responsible for what task?) 
-Riley- Data recording and API usage
-Adessa- pandas and data proccessing
-Andrew- recording and structuring data in a visual way
+Riley Durrer- Data recording and API usage
+Adessa Faith- pandas and data proccessing
+Andrew Potts- recording and structuring data in a visual way
