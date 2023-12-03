@@ -1,0 +1,34 @@
+import requests
+from pprint import pprint
+import pandas as pd
+
+key = "UBDJK9HPDEWXDFG24QULVRJJB3S2N722"
+gptR=pd.read_csv('GPTResponse.csv')
+
+#responses = gptR['GPT Response'].tolist()
+#tones= []
+count=0
+
+
+def analyzeTone(text):
+    print("s")
+    response = requests.post(
+    "https://api.sapling.ai/api/v1/tone",
+    json={
+        "key": key,
+        "text": text
+    }
+    )   
+    return response.json()
+
+#for response in responses:
+#    tones.append(analyzeTone(response))
+#    analyzeTone(response)
+#gptR['tonal analysis']= tones    
+
+
+gptR['tonal analysis']= gptR['GPT Response'].apply(analyzeTone) 
+
+gptR.to_csv("tonal_analysis.csv", encoding='utf-8', index=False)
+
+print("All done")
