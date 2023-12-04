@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 import pandas as pd
 
-key = "UBDJK9HPDEWXDFG24QULVRJJB3S2N722"
+key = "key here"
 gptR=pd.read_csv('GPTResponse.csv')
 
 #responses = gptR['GPT Response'].tolist()
