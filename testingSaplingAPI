@@ -1,9 +1,13 @@
-import requests
+import requests #Import for requests which is a common web API management tool
 from pprint import pprint
 import pandas as pd
 
-key = "key here"
-gptR=pd.read_csv('GPTResponse.csv')
+key = "key here" #removed key for privacy reason
+gptR=pd.read_csv('GPTResponse.csv') #Puts csv with our results from GPT into a data frame
+
+#Originally tried to use this code and it didn't detect my function for reasons unkown to me 
+# so I tried it a different way with all the commented it out code but then the error went away so I reverted to original method
+# I didn't change the code in any significant way so I don't know what fixed the error, might of been a glitch in the compiler.
 
 #responses = gptR['GPT Response'].tolist()
 #tones= []
@@ -11,15 +15,16 @@ count=0
 
 
 def analyzeTone(text):
-    print("s")
+    print("s") #just used to watch the code so I could see how fast it was moving and, sence the API cost money, make sure it didn't get caught in a endless loop requiring me to terminate it.  
+    #copied api structure, this is how Sapling api wants our information to run inside its API
     response = requests.post(
-    "https://api.sapling.ai/api/v1/tone",
+    "https://api.sapling.ai/api/v1/tone",#connects it to the https server
     json={
-        "key": key,
-        "text": text
+        "key": key, #API key is needed simmiler to a username that links all our uses to my account so it can charge me, I do not have the API key in this document for privacy reasons
+        "text": text #The data to be proccessed by the API
     }
     )   
-    return response.json()
+    return response.json() #returns in JSON format which we later have to clean, I was worried about getting rid of .json because it may have been a required part and each time I run the code it costs money
 
 #for response in responses:
 #    tones.append(analyzeTone(response))
@@ -27,8 +32,8 @@ def analyzeTone(text):
 #gptR['tonal analysis']= tones    
 
 
-gptR['tonal analysis']= gptR['GPT Response'].apply(analyzeTone) 
+gptR['tonal analysis']= gptR['GPT Response'].apply(analyzeTone) #for every column in the DF it applies the function that calls the api so we can add a column with all the api results
 
-gptR.to_csv("tonal_analysis.csv", encoding='utf-8', index=False)
+gptR.to_csv("tonal_analysis.csv", encoding='utf-8', index=False) #creates an updated csv file with all the processed Data
 
-print("All done")
+print("All done") #Because the code takes time I wanted a print statement so I could know it was finnished.
