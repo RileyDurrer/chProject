@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 # Set your API key here
-openai.api_key = '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'
+openai.api_key = 'key'
 
 response = openai.Completion.create(
   engine="text-davinci-003",
